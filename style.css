@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-item {
+    @apply transition duration-150 cursor-pointer hover:text-stone-400;
+}

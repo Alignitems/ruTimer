@@ -11,8 +11,88 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+        @tailwind base;@tailwind components;@tailwind utilities;.menu-item {@apply hover:text-stone-400 cursor-pointer transition duration-150;}
+    </style>
 </head>
-<body class="font-mono">
-    Hello, world!
+<body class="font-mono bg-stone-800 text-stone-200">
+    <main class="flex flex-col h-screen gap-10 p-10">
+        <div class="flex items-end gap-3">
+            <span class="text-4xl menu-item">ruTimer</span>
+            <div class="flex gap-2 text-[1.3rem]">
+                <i class="uil uil-info-circle menu-item"></i>
+                <i class="uil uil-setting menu-item"></i>
+                <i class="uil uil-export menu-item"></i>
+                <i class="uil uil-comment-exclamation menu-item"></i>
+                <i class="uil uil-github-alt menu-item"></i>
+            </div>
+        </div>
+        <div class="flex grow">
+            <div class="bg-stone-700 min-w-[20rem] rounded-2xl flex flex-col items-center p-5 gap-5">
+                <div class="flex flex-col w-full gap-2 p-5 border border-stone-400 rounded-xl">
+                    <div class="flex flex-col items-center justify-center text-xl">
+                        <span>0 Solves</span>
+                        <span>Avarage: 0.00</span>
+                    </div>
+                    <div class="grid grid-cols-3">
+                        <span></span>
+                        <span>Current</span>
+                        <span>Best</span>
+                        <span>Single</span>
+                        <span>0.00</span>
+                        <span>0.00</span>
+                        <span>mo3</span>
+                        <span>0.00</span>
+                        <span>0.00</span>
+                        <span>ao5</span>
+                        <span>0.00</span>
+                        <span>0.00</span>
+                        <span>ao12</span>
+                        <span>0.00</span>
+                        <span>0.00</span>
+                    </div>
+                </div>
+                <div class="grid justify-center w-full grid-cols-4 gap-x-2">
+                    <span></span>
+                    <span>Time</span>
+                    <span>ao5</span>
+                    <span>ao12</span>
+                    <span>5</span>
+                    <span>0.00</span>
+                    <span>0.00</span>
+                    <span>0.00</span>
+                    <span>4</span>
+                    <span>0.00</span>
+                    <span>0.00</span>
+                    <span>0.00</span>
+                    <span>3</span>
+                    <span>0.00</span>
+                    <span>0.00</span>
+                    <span>0.00</span>
+                    <span>2</span>
+                    <span>0.00</span>
+                    <span>0.00</span>
+                    <span>0.00</span>
+                    <span>1</span>
+                    <span>0.00</span>
+                    <span>0.00</span>
+                    <span>0.00</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-center text-4xl grow">
+                <div class="flex flex-col items-center gap-8">
+                    <span class="font-sans text-[18rem] mb-[7rem]">0.00</span>
+                    <div class="text-[4rem]">
+                        <span>ao5: </span>
+                        <span class="font-sans">0.00</span>
+                    </div>
+                    <div class="text-[4rem]">
+                        <span>ao5: </span>
+                        <span class="font-sans">0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
